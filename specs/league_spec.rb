@@ -7,8 +7,8 @@ require_relative('../models/league.rb')
 class TestLeague < MiniTest::Test
 
   def setup
-    # Team.delete_all()
-    # Match.delete_all()
+    Match.delete_all()
+    Team.delete_all()
 
     team1 = Team.new({'name' => 'SuperBalls', 'location' => 'Edinburgh'})
     team2 = Team.new({'name' => 'Blajhs', 'location' => 'Glasgow'})
