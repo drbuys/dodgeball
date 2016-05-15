@@ -49,4 +49,9 @@ class TestLeague < MiniTest::Test
     assert_equal([[1, 'SuperBalls'],[1, 'Blajhs'],[2, 'Bobbins'],[0, 'Sheeplovers']], result)
   end
 
+  def test_league_standings
+    result = @league.league_standings
+    assert_equal([[2, 'Bobbins'],[1, 'Blajhs'],[1, 'SuperBalls'],[0, 'Sheeplovers']], result)
+  end
+
 end

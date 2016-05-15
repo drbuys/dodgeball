@@ -24,13 +24,12 @@ class League
     return [wins, team.name]
   end
 
-  def teams_wins
+  def teams_wins()
     return @teams.map { |team| total_wins(team)}
   end
 
-  def league_standings
-    
+  def league_standings()
+    return teams_wins.sort_by {|wins| wins[0] }.reverse
   end
-
 
 end
