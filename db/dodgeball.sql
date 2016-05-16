@@ -14,5 +14,5 @@ CREATE TABLE matches (
   home_id INT4 references teams(id),
   away_id INT4 references teams(id),
   homescore INT4,
-  awayscore INT4
+  awayscore INT4,
 );
